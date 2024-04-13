@@ -9,6 +9,29 @@ html,body{
     width: 100%;
 }
 
+
+.cursor{
+    height: 30px;
+    background-color: #95C11E;
+    width: 30px;
+    border-radius: 50%;
+    position:fixed;
+    z-index: 99;
+
+}
+.cursor-blur{
+    background-color: #96c11e5c;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position:fixed;
+    z-index: 9;
+    filter: blur(50px);
+    opacity: .7;
+
+}
+
+
 #nav{
     width: 100%;
     padding: 25px 0px;
@@ -19,13 +42,12 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
-
-    
 }
 
 #nav ul img{
     width: 80px;
 }
+
 
 #nav ul{
     display: flex;
@@ -34,13 +56,13 @@ html,body{
     align-items: center;
 }
 
+
 .bgImg{
     height: 100%;
     width: 100%;
     object-fit: cover;
     position: fixed;
     z-index: -1;
-    
 }
 
 
@@ -60,6 +82,7 @@ html,body{
     justify-content: center;
     text-align: center;
     gap: 10px;
+    z-index:10;
 }
 
 #page1 h1{
@@ -88,5 +111,7 @@ html,body{
 #page2{
     height: 100vh;
     width: 100vw;
+    z-index:10;
+
 }
 
