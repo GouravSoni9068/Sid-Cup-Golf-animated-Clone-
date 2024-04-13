@@ -43,4 +43,20 @@ gsap.to("#main",{
         scrub:3,
     }
 
+
+})
+
+
+gsap.from(".about-us",{
+    y:100,
+    opacity:0,
+    scrollTrigger:{
+        trigger:".about-us",
+        scroller:"body",
+        // markers:true,
+        start:"top 98%",
+        end:"top 85%",
+        scrub:2,
+    }
+
 })
