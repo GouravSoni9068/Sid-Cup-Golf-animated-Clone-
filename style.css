@@ -3,6 +3,7 @@
     padding: 0px;
     color: white;
     font-family: system-ui;
+    box-sizing: border-box;
 }
 html,body{
     height: 100%;
@@ -21,12 +22,12 @@ html,body{
 }
 .cursor-blur{
     background-color: #96c11e5c;
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
     position:fixed;
     z-index: 9;
-    filter: blur(50px);
+    filter: blur(60px);
     opacity: .7;
 
 }
@@ -68,7 +69,7 @@ html,body{
 
 #main{
     position: relative;
-    background-color: rgba(0, 0, 0, 0.371);
+    background-color: rgba(0, 0, 0, 0.4);
     overflow: hidden;
 
 }
@@ -110,10 +111,11 @@ html,body{
 
 #page2{
 
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     z-index:10;
     position: relative;
+    padding-bottom: 100px;
 
 
 }
@@ -168,6 +170,7 @@ html,body{
     align-items: center;
     gap: 80px;
     margin: 0px 50px;
+    padding-bottom: 100px;
 
 }
 .about-us img{
@@ -184,9 +187,60 @@ html,body{
 }
 .about-us h1{
     font-size: 60px;
+    font-weight: 500;
     text-transform: uppercase;
 }
 .writtenPart .small{
     font-size: 20px;
     text-align: center;
+}
+.cardContainer{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+    
+}
+.card .hidden{
+    
+    text-align: center;
+    padding-top: 30px;
+    background-color: #95C11E;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    opacity: 0;
+    transition: all 0.7s;
+    
+    
+}
+.card:hover .hidden{
+    opacity: 1;
+    color: black;
+}
+
+.card .hidden h1,.card .hidden p{
+    color: black;
+}
+.card1{
+   background-image: url(images/card1.avif);
+
+   background-size: cover; 
+}
+
+.card2{
+    background-image: url(images/card2.webp); 
+    background-size: cover; 
+}
+
+.card3{
+    background-image: url(images/card3.avif); 
+    background-size: cover; 
+}
+
+.card:hover .hidden{
+    opacity: 1;
 }

@@ -14,8 +14,8 @@ document.addEventListener("mousemove",(info)=>{
     console.log(info.x);
     console.log(info.y);
     
-    blur.style.top=info.y-150+"px";
-    blur.style.left=info.x-150+"px";
+    blur.style.top=info.y-200+"px";
+    blur.style.left=info.x-200+"px";
 })
 
 
@@ -48,15 +48,29 @@ gsap.to("#main",{
 
 
 gsap.from(".about-us",{
-    y:100,
+    y:150,
     opacity:0,
     scrollTrigger:{
         trigger:".about-us",
         scroller:"body",
         // markers:true,
-        start:"top 98%",
-        end:"top 85%",
+        start:"top 85%",
+        end:"top 75%",
         scrub:2,
     }
 
 })
+
+
+
+
+// let cards=document.querySelectorAll(".card");
+
+// cards.forEach(card => {
+//     card.addEventListener("mouseover",()=>{
+//         card.querySelector("img").style.display="none";
+//     })
+//     card.addEventListener("mouseleave",()=>{
+//         card.querySelector("img").style.display="block";
+//     })
+// });
