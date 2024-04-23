@@ -21,7 +21,7 @@ document.addEventListener("mousemove",(info)=>{
 
 gsap.to("#nav",{
     backgroundColor:"black",
-    height:" 45px",
+    height:" 90px",
     scrollTrigger:{
         trigger:"#nav",
         scroller:"body",
@@ -74,3 +74,31 @@ gsap.from(".about-us",{
 //         card.querySelector("img").style.display="block";
 //     })
 // });
+
+
+gsap.from(".leftQuote",{
+    x:-50,
+    y:-50,
+    scrollTrigger:{
+        trigger:".leftQuote",
+        scroller:"body",
+        // markers:true,
+        start:"top 17%",
+        end:"top 12%",
+        scrub:3,
+        
+    }
+})
+gsap.from(".rightQuote",{
+    x:50,
+    y:50,
+    scrollTrigger:{
+        trigger:".leftQuote",
+        scroller:"body",
+        // markers:true,
+        start:"top 17%",
+        end:"top 12%",
+        scrub:3,
+    }
+    
+})
