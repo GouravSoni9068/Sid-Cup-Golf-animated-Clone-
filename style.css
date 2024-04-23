@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -70,7 +73,6 @@ html,body{
     position: relative;
     background-color: rgba(0, 0, 0, 0.4);
     overflow: hidden;
-
 }
 
 #page1{
@@ -265,7 +267,7 @@ html,body{
 
 
 .page3{
-    /* position: relative; */
+    position: relative;
     height: 100%;
     z-index: 10;
     display: flex;
@@ -291,3 +293,111 @@ html,body{
     top: 160px;
     right: 25px;
 }
+
+.page4{
+    z-index: 10;
+    position: relative;
+    color: #95C11E;
+
+    
+}
+
+
+.page4 h1{
+    text-align: center;
+    font-size: 85px;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+
+    -webkit-text-stroke:2px white;
+    color: transparent;
+    position: relative;
+    top: 40px;
+    
+}
+
+.page4 .cards{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    padding-bottom: 50px;
+    
+
+}
+
+.page4 .pageCard{
+    height: 150px;
+    width: 300px;
+    border-radius: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #95C11E;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    /* transition: all .5s; */
+}
+.page4card1{
+    background-size: cover; 
+}
+.page4card2{
+    background-size: cover; 
+}
+.page4card3{
+    background-size: cover; 
+}
+
+.ending{
+    /* height: 100px; */
+    /* background-color: #95C11E; */
+    background: linear-gradient(to left bottom, #119f3a 0%, #a3d421 80%);
+    position: relative;
+    
+    
+}
+.ending img{
+    width: 300px;
+    /* position: relative; */
+}
+
+.ending .write{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+}
+
+.ending .blackCol h2,.ending .blackCol h3{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.ending .write img{
+    width: 100px;
+}
+
+/* 
+.page4card1:hover{
+    color: white;
+    background-image: url("images/page4card1.webp");
+    background-size: cover; 
+}
+.page4card2:hover {
+    color: white;
+    background-image: url("images/page4card2.webp");
+    background-size: cover; 
+}
+.page4card3:hover{
+    color: white;
+    background-image: url("images/page4card1.webp");
+    background-size: cover; 
+} */
+
+
