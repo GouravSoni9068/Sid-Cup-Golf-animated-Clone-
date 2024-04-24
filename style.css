@@ -278,6 +278,13 @@ body::-webkit-scrollbar-thumb{
 .card .hidden h1,.card .hidden p{
     color: black;
 }
+.card .hidden h1{
+    font-size: 3.2vw;
+    
+}
+.card .hidden p{
+    font-size: 1.2vw;
+}
 .card1{
    background-image: url(images/card1.avif);
    background-size: cover; 
