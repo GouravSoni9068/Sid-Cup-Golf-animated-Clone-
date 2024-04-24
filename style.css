@@ -13,6 +13,19 @@ html,body{
     width: 100%;
 }
 
+*::selection{
+    color: #95C11E;
+    background-color: rgb(255, 255, 255);
+}
+body::-webkit-scrollbar{
+    /* display: block; */
+    width: 8px;
+    background-color: #95C11E;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 10px;
+}
 
 .cursor{
     height: 30px;
@@ -21,7 +34,6 @@ html,body{
     border-radius: 50%;
     position:fixed;
     z-index: 99;
-
 }
 .cursor-blur{
     background-color: #96c11e5c;
@@ -59,6 +71,14 @@ html,body{
     align-items: center;
 }
 
+#nav ul li:hover{
+    color: #cfee79;
+    cursor: pointer;
+}
+#nav ul li img:hover{
+    cursor: default;
+}
+
 
 .bgImg{
     height: 100%;
@@ -76,6 +96,7 @@ html,body{
 }
 
 #page1{
+    position: relative;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -109,6 +130,29 @@ html,body{
     font-size: 20px;
     width: 45%;
 }
+
+#page1 .arrow{
+    position: absolute;
+    left: -2%;
+    bottom: 0%;
+    height: 200px;
+    width: 200px;
+    border: solid 3px #a3d421;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all ease 0.5s;
+
+}
+#page1 .arrow i{
+    font-size: 30px;
+}
+#page1 .arrow:hover{
+    scale: 0.4;
+    background-color: #95C11E;
+}
+
 
 #page2{
 
@@ -204,6 +248,8 @@ html,body{
     height: 250px;
     width: 250px;
     border-radius: 15px;
+    transition: all 0.7s;
+
     
 }
 .card .hidden{
@@ -244,6 +290,10 @@ html,body{
 
 .card:hover .hidden{
     opacity: 1;
+}
+
+.card:hover{
+    transform: rotate3d(1,1,0,20deg);
 }
 
 .green-div{
@@ -321,33 +371,54 @@ html,body{
     justify-content: space-around;
     position: relative;
     padding-bottom: 50px;
-    
+     
 
 }
 
 .page4 .pageCard{
     height: 150px;
     width: 300px;
+    /* border: solid 2px red; */
     border-radius: 20px;
-    
+    overflow: hidden;
+    position: relative;
+
+}
+.page4 .pageCard h2{
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #95C11E;
-    color: black;
+    color: #000;
+    font-weight: 800;
     font-size: 30px;
-    font-weight: bold;
-    /* transition: all .5s; */
+    height: 100%;
+    width: 100%;
+    background-color: #95C11E;
+    transition: all 0.3s;
+    z-index: 10;
+
 }
-.page4card1{
-    background-size: cover; 
+
+.page4 .pageCard img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s;
+    scale: 1.1;
 }
-.page4card2{
-    background-size: cover; 
+
+.pageCard:hover h2{
+    background-color: transparent;
+    color: white;
 }
-.page4card3{
-    background-size: cover; 
+.pageCard:hover img{
+    scale: 1;
 }
+
+
+
+
 
 .ending{
     /* height: 100px; */
@@ -369,7 +440,7 @@ html,body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 100px;
     
 }
 
@@ -377,27 +448,10 @@ html,body{
     color: black;
     text-transform: uppercase;
     font-weight: 500;
+    line-height: 1.4;
 }
 
 .ending .write img{
-    width: 100px;
+    width: 150px;
 }
-
-/* 
-.page4card1:hover{
-    color: white;
-    background-image: url("images/page4card1.webp");
-    background-size: cover; 
-}
-.page4card2:hover {
-    color: white;
-    background-image: url("images/page4card2.webp");
-    background-size: cover; 
-}
-.page4card3:hover{
-    color: white;
-    background-image: url("images/page4card1.webp");
-    background-size: cover; 
-} */
-
 

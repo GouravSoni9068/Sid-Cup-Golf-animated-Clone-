@@ -32,9 +32,6 @@ allNavLi.forEach(ele => {
     })
 });
 
-
-
-
 gsap.to("#nav",{
     backgroundColor:"black",
     height:" 90px",
@@ -77,20 +74,18 @@ gsap.from(".about-us",{
 
 })
 
+gsap.from(".card",{
+    opacity:0,
+    stagger:.2,
+    scrollTrigger:{
+        trigger:".card",
+        scroller:"body",
+        start:"top 70%",
+        end:"top 65%",
+        scrub:true,
+    }
 
-
-
-// let cards=document.querySelectorAll(".card");
-
-// cards.forEach(card => {
-//     card.addEventListener("mouseover",()=>{
-//         card.querySelector("img").style.display="none";
-//     })
-//     card.addEventListener("mouseleave",()=>{
-//         card.querySelector("img").style.display="block";
-//     })
-// });
-
+})
 
 gsap.from(".leftQuote",{
     x:-50,
@@ -118,27 +113,6 @@ gsap.from(".rightQuote",{
     }
     
 })
-
-// let card1=document.querySelector(".page4card1");
-// let card2=document.querySelector(".page4card2");
-// let card3=document.querySelector(".page4card3");
-
-
-// card1.addEventListener('mouseover',()=>{
-//     card1.style.backgroundImage='url("images/page4card1.webp")';
-//     card1.style.color="white";
-// })
-// card2.addEventListener('mouseover',()=>{
-//     card2.style.backgroundImage='url("images/page4card2.webp")';
-//     card2.style.color="white";
-
-// })
-// card3.addEventListener('mouseover',()=>{
-//     card3.style.backgroundImage='url("images/page4card1.webp")';
-
-//     card3.style.color="white";
-
-// })
 
 
 gsap.from(".page4 h1",{
