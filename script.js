@@ -104,7 +104,7 @@ gsap.from(".rightQuote",{
 
 
 gsap.from(".page4 h1",{
-    y:43,
+    y:25,
     
     scrollTrigger:{
         trigger:".page4 h1",

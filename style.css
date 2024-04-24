@@ -53,22 +53,25 @@ body::-webkit-scrollbar-thumb{
     /* padding: 50px 0px; */
     position: fixed;
     z-index: 99;
-    height: 110px;
+    height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #nav ul img{
-    width: 80px;
+    width: 8vw;
 }
 
 
 #nav ul{
     display: flex;
     list-style: none;
-    gap: 60px;
+    gap: 6vw;
     align-items: center;
+}
+#nav ul li{
+    font-size: 1.3vw;
 }
 
 #nav ul li:hover{
@@ -109,25 +112,25 @@ body::-webkit-scrollbar-thumb{
 }
 
 #page1 h1{
-    font-size: 100px;
+    font-size: 10vw;
     position: relative;
 }
 #page1 h1::before{
     content:"EAT. DRINK. PLAY.";
     color: black;
     position: absolute;
-    top: -7px;
-    left: -5px;
+    top: -0.7vw;
+    left: -0.5vw;
     -webkit-text-stroke: 2px #95C11E;
     z-index: -1;
 }
 #page1 h4{
     font-weight: 700;
-    font-size: 37px;
+    font-size: 3.7vw;
 }
 
 #page1 p{
-    font-size: 20px;
+    font-size: 2vw;
     width: 45%;
 }
 
@@ -135,14 +138,14 @@ body::-webkit-scrollbar-thumb{
     position: absolute;
     left: -2%;
     bottom: 0%;
-    height: 200px;
-    width: 200px;
+    height: 20vw;
+    width: 20vw;
     border: solid 3px #a3d421;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    transition: all ease 0.5s;
+    transition: scale ease 0.5s;
 
 }
 #page1 .arrow i{
@@ -177,11 +180,11 @@ body::-webkit-scrollbar-thumb{
 
 .scroll-in h3{
     white-space: nowrap;
-    font-size: 100px;
+    font-size: 10vw;
     color: transparent;
     font-weight: 900;
     -webkit-text-stroke:4px #95C11E;
-    transition: all;
+    transition: color;
     transition-duration: 0.5s;
 
 
@@ -213,14 +216,14 @@ body::-webkit-scrollbar-thumb{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 80px;
-    margin: 0px 50px;
+    gap: 8vw;
+    margin: 0px 5vw;
     padding-bottom: 100px;
 
 }
 .about-us img{
-    width: 250px;
-    height: 250px;
+    width: 20vw;
+    height: 20vw;
     border-radius:20px;
 }
 .writtenPart{
@@ -231,12 +234,12 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
 }
 .about-us h1{
-    font-size: 60px;
+    font-size: 6vw;
     font-weight: 500;
     text-transform: uppercase;
 }
 .writtenPart .small{
-    font-size: 20px;
+    font-size: 2vw;
     text-align: center;
 }
 .cardContainer{
@@ -245,13 +248,17 @@ body::-webkit-scrollbar-thumb{
     margin-bottom: 100px;
 }
 .card{
-    height: 250px;
-    width: 250px;
+    height: 25vw;
+    width: 25vw;
     border-radius: 15px;
-    transition: all 0.7s;
-
-    
+    transition: transform 0.7s;
 }
+
+.card:hover{
+    transform: rotate3d(1,1,0,20deg);
+}
+
+
 .card .hidden{
     
     text-align: center;
@@ -262,8 +269,6 @@ body::-webkit-scrollbar-thumb{
     border-radius: 15px;
     opacity: 0;
     transition: all 0.7s;
-    
-    
 }
 .card:hover .hidden{
     opacity: 1;
@@ -292,10 +297,6 @@ body::-webkit-scrollbar-thumb{
     opacity: 1;
 }
 
-.card:hover{
-    transform: rotate3d(1,1,0,20deg);
-}
-
 .green-div{
     display: flex;
     align-items: center;
@@ -306,13 +307,13 @@ body::-webkit-scrollbar-thumb{
 }
 
 .green-div img{
-    width: 300px;
+    width: 25vw;
 }
 .green-div h3{
     color: black;
     width: 550px;
     text-align: center;
-    font-size: 30px;
+    font-size: 3vw;
 }
 
 
@@ -328,20 +329,20 @@ body::-webkit-scrollbar-thumb{
 .page3 h2{
     width: 65%;
     text-align: center;
-    font-size: 40px;
+    font-size: 3.5vw;
 }
 .quote{
-    width: 70px;
+    width: 7vw;
 }
 .leftQuote{
     position: relative;
-    left: 25px;
-    top: -145px;
+    left: 2.5vw;
+    top: -14.5vw;
 }
 .rightQuote{
     position: relative;
-    top: 160px;
-    right: 25px;
+    top: 16vw;
+    right: 2.5vw;
 }
 
 .page4{
@@ -355,14 +356,14 @@ body::-webkit-scrollbar-thumb{
 
 .page4 h1{
     text-align: center;
-    font-size: 85px;
+    font-size: 6.5vw;
     text-transform: uppercase;
     font-family: "Playfair Display", serif;
 
     -webkit-text-stroke:2px white;
     color: transparent;
     position: relative;
-    top: 40px;
+    top: 3vw;
     
 }
 
@@ -376,8 +377,8 @@ body::-webkit-scrollbar-thumb{
 }
 
 .page4 .pageCard{
-    height: 150px;
-    width: 300px;
+    height: 15vw;
+    width: 30vw;
     /* border: solid 2px red; */
     border-radius: 20px;
     overflow: hidden;
@@ -391,7 +392,7 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
     color: #000;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 3vw;
     height: 100%;
     width: 100%;
     background-color: #95C11E;
@@ -429,7 +430,7 @@ body::-webkit-scrollbar-thumb{
     
 }
 .ending img{
-    width: 300px;
+    width: 30vw;
     /* position: relative; */
 }
 
@@ -440,7 +441,7 @@ body::-webkit-scrollbar-thumb{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 10vw;
     
 }
 
@@ -452,6 +453,12 @@ body::-webkit-scrollbar-thumb{
 }
 
 .ending .write img{
-    width: 150px;
+    width: 15vw;
 }
-
+.ending .blackCol h2{
+    font-size: 1.8vw;
+}
+.ending .blackCol h3
+{
+    font-size: 1.3vw;
+}
