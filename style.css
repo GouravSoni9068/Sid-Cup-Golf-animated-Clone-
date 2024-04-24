@@ -291,10 +291,10 @@ body::-webkit-scrollbar-thumb{
 .card:hover .hidden{
     opacity: 1;
 }
-
+/* 
 .card:hover{
     transform: rotate3d(1,1,0,20deg);
-}
+} */
 
 .green-div{
     display: flex;

@@ -75,6 +75,7 @@ gsap.from(".about-us",{
 })
 
 gsap.from(".card",{
+    scale:0.8,
     opacity:0,
     stagger:.2,
     scrollTrigger:{
