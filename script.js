@@ -74,19 +74,6 @@ gsap.from(".about-us",{
 
 })
 
-gsap.from(".card",{
-    opacity:0,
-    stagger:.2,
-    scale:0.8,
-    scrollTrigger:{
-        trigger:".card",
-        scroller:"body",
-        start:"top 70%",
-        end:"top 65%",
-        scrub:true,
-    }
-
-})
 
 gsap.from(".leftQuote",{
     x:-50,
